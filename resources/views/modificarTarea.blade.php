@@ -25,10 +25,6 @@
                 @php $utiles->contenidoLabel('descripcion', 'Descripción de la Tarea *', $errores) @endphp</label><br>
             <textarea name="descripcion" id="descripcion">{{ ($_POST) ? $utiles->valorPost('descripcion') : ($task['descripcion'] ?? '') }}</textarea><br><br>
 
-            <label {{ ($_POST) ? $utiles->colorLabel('email', $errores) : '' }} for="email">
-                @php $utiles->contenidoLabel('email', 'E-mail Cliente *', $errores) @endphp</label><br>
-            <input type="text" name="email" id="email" value="{{ ($_POST) ? $utiles->valorPost('email') : ($task['email'] ?? '') }}"><br><br>
-
             <label for="direccion">Dirección de Realización</label><br>
             <input type="text" name="direccion" id="direccion" value="{{ ($_POST) ? $utiles->valorPost('direccion') : ($task['direccion'] ?? '') }}"><br><br>
 

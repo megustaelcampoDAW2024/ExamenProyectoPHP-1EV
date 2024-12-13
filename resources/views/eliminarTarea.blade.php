@@ -34,11 +34,7 @@
                 <tr>
                     <td>Descripción</td>
                     <td>{{$task['descripcion']}}</td>
-                </tr>    
-                <tr>
-                    <td>Email</td>
-                    <td>{{$task['email']}}</td>
-                </tr>    
+                </tr> 
                 <tr>
                     <td>Dirección</td>
                     <td>{{$task['direccion']}}</td>

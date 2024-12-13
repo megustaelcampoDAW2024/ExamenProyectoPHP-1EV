@@ -78,7 +78,7 @@ class dbModel extends Model
     {
         $db = SingletonDB::getInstance();
         $sql = 
-        "SELECT task_id, num_fiscal_cliente, nombre, apell, tlf, descripcion, email, direccion, poblacion, 
+        "SELECT task_id, num_fiscal_cliente, nombre, apell, tlf, descripcion, direccion, poblacion, 
         codigo_post, provincia, estado, fecha_creacion, operario_id, fecha_realizacion, anotaciones_anteriores, 
         anotaciones_posteriores, fich_resu, foto
         FROM task 
@@ -209,7 +209,7 @@ class dbModel extends Model
     {
         $db = SingletonDB::getInstance();
         $sql = 
-        "INSERT INTO task (num_fiscal_cliente, nombre, apell, tlf, descripcion, email, direccion, poblacion, 
+        "INSERT INTO task (num_fiscal_cliente, nombre, apell, tlf, descripcion, direccion, poblacion, 
         codigo_post, provincia, estado, fecha_creacion, operario_id, fecha_realizacion, anotaciones_anteriores, 
         anotaciones_posteriores, fich_resu, foto)
         VALUES (" . 
@@ -218,7 +218,6 @@ class dbModel extends Model
             (($task->apell !== null && $task->apell != '') ? "'$task->apell'" : "NULL") . ", " . 
             (($task->tlf !== null && $task->tlf != '') ? "'$task->tlf'" : "NULL") . ", " . 
             (($task->descripcion !== null && $task->descripcion != '') ? "'$task->descripcion'" : "NULL") . ", " . 
-            (($task->email !== null && $task->email != '') ? "'$task->email'" : "NULL") . ", " . 
             (($task->direccion !== null && $task->direccion != '') ? "'$task->direccion'" : "NULL") . ", " . 
             (($task->poblacion !== null && $task->poblacion != '') ? "'$task->poblacion'" : "NULL") . ", " . 
             (($task->codigo_post !== null && $task->codigo_post != '') ? "'$task->codigo_post'" : "NULL") . ", " . 
@@ -257,8 +256,6 @@ class dbModel extends Model
             (($updatedTask->tlf !== null && $updatedTask->tlf != '') ? "'$updatedTask->tlf'" : "NULL") . ", " . 
             "descripcion = " . 
             (($updatedTask->descripcion !== null && $updatedTask->descripcion != '') ? "'$updatedTask->descripcion'" : "NULL") . ", " . 
-            "email = " . 
-            (($updatedTask->email !== null && $updatedTask->email != '') ? "'$updatedTask->email'" : "NULL") . ", " . 
             "direccion = " . 
             (($updatedTask->direccion !== null && $updatedTask->direccion != '') ? "'$updatedTask->direccion'" : "NULL") . ", " . 
             "poblacion = " . 

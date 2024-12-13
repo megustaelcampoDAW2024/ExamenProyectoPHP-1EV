@@ -20,9 +20,8 @@ class Task
      * @var string Nombre del cliente
      * @var string Apellido del cliente
      * @var string Número de teléfono del cliente
-     * @var string Dirección de correo electrónico del cliente
      */
-    public $nombre, $apell, $tlf, $email;
+    public $nombre, $apell, $tlf;
 
     /**
      * @var string Descripción de la tarea
@@ -76,7 +75,6 @@ class Task
         $this->apell = Utiles::ValorPost('apell');
         $this->tlf = Utiles::ValorPost('tlf');
         $this->descripcion = Utiles::ValorPost('descripcion');
-        $this->email = Utiles::ValorPost('email');
         $this->direccion = Utiles::ValorPost('direccion');
         $this->poblacion = Utiles::ValorPost('poblacion');
         $this->codigo_post = Utiles::ValorPost('codigo-post');

@@ -37,12 +37,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label {{ ($_POST) ? $utiles->colorLabel('email', $errores) : '' }} for="email">
-                        @php $utiles->contenidoLabel('email', 'E-mail Cliente *', $errores) @endphp</label>
-                    <input type="text" class="form-control" name="email" id="email" value="{{ ($_POST) ? $utiles->valorPost('email') : ($task['email'] ?? '') }}">
-                </div>
-
-                <div class="form-group">
                     <label for="direccion">Dirección de Realización</label>
                     <input type="text" class="form-control" name="direccion" id="direccion" value="{{ ($_POST) ? $utiles->valorPost('direccion') : ($task['direccion'] ?? '') }}">
                 </div>

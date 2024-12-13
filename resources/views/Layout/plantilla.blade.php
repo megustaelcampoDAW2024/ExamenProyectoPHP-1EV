@@ -7,11 +7,11 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <header class="bg-light p-3">
-            <p class="text-right">Usuario: {{$_SESSION['usuario']}} | @if($_SESSION['status'] == 'A') Administrador @else Operario @endif | <a href="{{miUrl('logOut')}}" class="btn btn-danger btn-sm">Log Out</a></p>
-            <h1 class="text-center">@yield('titulo')</h1>
-        </header>
         <div class="d-flex">
+            <header class="bg-light p-3">
+                <p class="text-right">Usuario: {{$_SESSION['usuario']}} | @if($_SESSION['status'] == 'A') Administrador @else Operario @endif | <a href="{{miUrl('logOut')}}" class="btn btn-danger btn-sm">Log Out</a></p>
+                <h1 class="text-center">@yield('titulo')</h1>
+            </header>
             <nav class="navbar navbar-light bg-light flex-column p-3" style="width: 250px;">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="<?=miUrl('listarTareas')?>">Listar Tareas</a></li>
