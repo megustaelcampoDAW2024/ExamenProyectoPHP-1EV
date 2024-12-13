@@ -1,6 +1,9 @@
 @extends('./layout/plantilla')
 @section('titulo', 'Constructora')
 @section('seccion')
+    <div class="container mt-4">
+        <h1 class="text-center">Visitas a esta página: <span style="font-size: 2em;">{{ $visitas }}</span></h1>
+    </div>
     <form method="post" enctype="multipart/form-data" class="container mt-4">
         <fieldset class="border p-4">
             <legend class="w-auto"><b>Formulario {{ isset($task) ? 'Modificación' : 'Creación' }} de Tarea</b></legend>

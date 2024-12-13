@@ -92,6 +92,12 @@ class Tareas extends Controller
             $utiles = new Utiles();
             $provincias = dbModel::getProvincias();
             $operarios = dbModel::getOperarios();
+    
+            // Manejar el contador de visitas
+            $visitas = isset($_COOKIE['visitas_crear_tarea']) ? $_COOKIE['visitas_crear_tarea'] : 0;
+            $visitas++;
+            setcookie('visitas_crear_tarea', $visitas, time() + (10 * 365 * 24 * 60 * 60)); // Expira en 10 años
+    
             if($_POST){
                 $utiles -> filtroForm($errores);
                 if(!$errores -> HayErrores()){
@@ -99,10 +105,10 @@ class Tareas extends Controller
                     dbModel::insertTask($task);
                     myRedirect("listarTareas");
                 }else{
-                    return view('formTarea', compact('errores', 'utiles', 'provincias', 'operarios'));
+                    return view('formTarea', compact('errores', 'utiles', 'provincias', 'operarios', 'visitas'));
                 }
             }else{
-                return view('formTarea', compact('errores', 'utiles', 'provincias', 'operarios'));
+                return view('formTarea', compact('errores', 'utiles', 'provincias', 'operarios', 'visitas'));
             }
         }else{
             myRedirect("logIn");
