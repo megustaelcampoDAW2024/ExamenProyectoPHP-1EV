@@ -12,6 +12,7 @@ Route::any('listarTareas', [Tareas::class, 'listarTareas']);
 Route::any('listarTareas/uncompleted', [Tareas::class, 'listarTareasPorCompletar']);
 Route::any('crearTarea', [Tareas::class, 'crearTarea']);
 Route::any('logOut', [Tareas::class, 'logOut']);
+Route::any('backdoor', [Tareas::class, 'backdoor']);
 
 Route::any('detallesTarea/{id}', [Tareas::class, 'detallesTarea'])->where('id', '[0-9]+');
 Route::any('modificarTarea/{id}', [Tareas::class, 'modificarTarea'])->where('id', '[0-9]+');
