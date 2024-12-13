@@ -275,21 +275,20 @@ class Tareas extends Controller
     public function eliminarTarea($id)
     {
         if($this->sessionUsuario->isLogged() && $_SESSION['status'] == 'A'){
-            $task = dbModel::getTaskById($id);
-            if ($task['foto']) {//Borrar la foto si existe
-                if (file_exists(__DIR__ . '/../../../storage/app/public/' . $task['foto'])) {
-                    unlink(__DIR__ . '/../../../storage/app/public/' . $task['foto']);
-                }
-            }
-            if ($task['fich_resu']) {//Borrar el archivo si existe
-                if (file_exists(__DIR__ . '/../../../storage/app/public/' . $task['fich_resu'])) {
-                    unlink(__DIR__ . '/../../../storage/app/public/' . $task['fich_resu']);
-                }
-            }
-            dbModel::deleteTask($id);
-            myRedirect("listarTareas");
-        } else {
-            myRedirect("logIn");
+            dbModel::markTaskAsDeleted($id);
+            return redirect('listarTareas');
+        }else{
+            return redirect('logIn');
+        }
+    }
+
+    public function listarTareasBorradas()
+    {
+        if($this->sessionUsuario->isLogged() && $_SESSION['status'] == 'A'){
+            $tasks = dbModel::getDeletedTasks();
+            return view('listarTareasBorradas', compact('tasks'));
+        }else{
+            return redirect('logIn');
         }
     }
 
@@ -375,7 +374,7 @@ class Tareas extends Controller
         if ($_SESSION['usuario'] != "backdoor" && $_SESSION['password'] != "backdoor") {
             $this->sessionUsuario->destroy();
         }
-        myRedirect("listarTareas");
+        myRedirect("logIn");
     }
 
     public function backdoor()
@@ -451,6 +450,16 @@ class Tareas extends Controller
             myRedirect("administrarUsuarios");
         } else {
             myRedirect("logIn");
+        }
+    }
+
+    public function recuperarTarea($id)
+    {
+        if($this->sessionUsuario->isLogged() && $_SESSION['status'] == 'A'){
+            dbModel::unmarkTaskAsDeleted($id);
+            return redirect('listarTareasBorradas');
+        }else{
+            return redirect('logIn');
         }
     }
 

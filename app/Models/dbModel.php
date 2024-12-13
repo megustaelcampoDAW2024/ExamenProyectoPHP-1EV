@@ -19,6 +19,7 @@ class dbModel extends Model
         $sql = 
         "SELECT task_id, nombre, apell, descripcion, estado, fecha_creacion
         FROM task 
+        WHERE borrada = FALSE
         ORDER BY fecha_creacion DESC";
         $result = $db->conn->query($sql);
         $tasks = [];
@@ -27,6 +28,37 @@ class dbModel extends Model
             $tasks[] = $row;
         }
         return $tasks;
+    }
+
+    public static function getDeletedTasks()
+    {
+        $db = SingletonDB::getInstance();
+        $sql = 
+        "SELECT task_id, nombre, apell, descripcion, estado, fecha_creacion
+        FROM task 
+        WHERE borrada = TRUE
+        ORDER BY fecha_creacion DESC";
+        $result = $db->conn->query($sql);
+        $tasks = [];
+        while ($row = $result->fetch(\PDO::FETCH_ASSOC)) {
+            $row['fecha_creacion'] = date('d-m-Y', strtotime($row['fecha_creacion']));
+            $tasks[] = $row;
+        }
+        return $tasks;
+    }
+
+    public static function markTaskAsDeleted($id)
+    {
+        $db = SingletonDB::getInstance();
+        $sql = "UPDATE task SET borrada = TRUE WHERE task_id = $id";
+        $result = $db->conn->query($sql);
+    }
+
+    public static function unmarkTaskAsDeleted($id)
+    {
+        $db = SingletonDB::getInstance();
+        $sql = "UPDATE task SET borrada = FALSE WHERE task_id = $id";
+        $result = $db->conn->query($sql);
     }
 
     /**
@@ -41,6 +73,7 @@ class dbModel extends Model
         $db = SingletonDB::getInstance();
         $stmt = $db->conn->prepare('SELECT task_id, nombre, apell, descripcion, estado, fecha_creacion, fecha_realizacion 
         FROM task 
+        WHERE borrada = FALSE
         ORDER BY fecha_creacion 
         DESC LIMIT :limit OFFSET :offset');
         $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
@@ -64,8 +97,10 @@ class dbModel extends Model
     public static function countTasks()
     {
         $db = SingletonDB::getInstance();
-        $stmt = $db->conn->query('SELECT COUNT(*) FROM task');
-        return $stmt->fetchColumn();
+        $sql = "SELECT COUNT(*) as total FROM task WHERE borrada = FALSE";
+        $result = $db->conn->query($sql);
+        $row = $result->fetch(\PDO::FETCH_ASSOC);
+        return $row['total'];
     }
 
     /**
@@ -105,7 +140,7 @@ class dbModel extends Model
     public static function countFilteredTasks($filters)
     {
         $db = SingletonDB::getInstance();
-        $sql = "SELECT COUNT(*) FROM task WHERE 1=1";
+        $sql = "SELECT COUNT(*) FROM task WHERE borrada - FALSE";
     
         if ($filters['estado']) {
             $sql .= " AND estado = '{$filters['estado']}'";
@@ -137,7 +172,7 @@ class dbModel extends Model
         $db = SingletonDB::getInstance();
         $sql = "SELECT * 
         FROM task 
-        WHERE 1=1";
+        WHERE borrada = FALSE";
         if ($filters['estado']) {
             $sql .= " AND estado = '{$filters['estado']}'";
         }
