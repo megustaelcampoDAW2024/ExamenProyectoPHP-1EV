@@ -1,0 +1,416 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}db\+Model Class Reference}
+\hypertarget{class_app_1_1_models_1_1db_model}{}\label{class_app_1_1_models_1_1db_model}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+Inheritance diagram for App\textbackslash{}Models\textbackslash{}db\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_models_1_1db_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_ad2ade5ae4a517c94e935709da7948792}{get\+Tasks\+Ordered\+By\+Date}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a241de64505e87f565ef3f0380dcc1b1a}{get\+Tasks\+By\+Page}} (\$limit, \$offset)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a40272e393b88371eaebdb31e77b3d3a7}{count\+Tasks}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a72630b6fbb85fb30c90ab086f4c4647f}{get\+Task\+By\+Id}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a7aea8025777b03918db101795b79e54f}{count\+Filtered\+Tasks}} (\$filters)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a13e614a862d634fab77f6a0b4d1fc0f7}{get\+Filtered\+Tasks}} (\$limit, \$offset, \$filters)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a0026bde7d61221937cd5db9d23035f5e}{get\+Provincias}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a1176a292e92c7b86f3d3d0299984654a}{get\+Provincia\+Name\+By\+Id}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a0663372ab855b73f042484dae934565e}{insert\+Task}} (\$task)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a50b56be99ec14e2799b370d7ad675d5f}{update\+Task}} (\$updated\+Task, \$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_aff374e404c25322fd122a53d91099e01}{complete\+Task}} (\$completed\+Task, \$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a199c9099eb657937929b9b7adbf7ad9a}{delete\+Task}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a7f757000a271e996d1327ea5d0eb00b0}{get\+Operarios}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a2f49902e836d21e41589cb9ecc7d167d}{check\+User}} (\$user, \$pass)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a3de0bc8779592a615397a8adb56aaffe}{get\+User}} (\$user, \$pass)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_aef661722d878b049aa811b3a2e61e841}{delete\+Ficheros}} (\$campo, \$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_ad91efb9cbdf42cc39b3fed095b465e87}{get\+Usuarios}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_ae0aa5333411906da9f3f84781c4f53f7}{crear\+Usuario}} (\$usuario, \$password, \$status)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a29c550675ca6ba681f67bd03772aaa94}{get\+Usuario\+By\+Id}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_acb078421628a31e4432956ebe7b5ad2f}{get\+Usuario\+Name\+By\+Id}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a6eea52a166a783c8d70e6728e35e39ba}{editar\+Usuario}} (\$id, \$usuario, \$password, \$status)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1db_model_a81b153c589c75fe8e2bcb3dd12d85102}{eliminar\+Usuario}} (\$id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1db_model_a2f49902e836d21e41589cb9ecc7d167d}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!checkUser@{checkUser}}
+\index{checkUser@{checkUser}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{checkUser()}{checkUser()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a2f49902e836d21e41589cb9ecc7d167d} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::check\+User (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$pass}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifica las credenciales de un usuario.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user} & Nombre de usuario. \\
+\hline
+string & {\em \$pass} & Contraseña del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si las credenciales son correctas, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_aff374e404c25322fd122a53d91099e01}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!completeTask@{completeTask}}
+\index{completeTask@{completeTask}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{completeTask()}{completeTask()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_aff374e404c25322fd122a53d91099e01} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::complete\+Task (\begin{DoxyParamCaption}\item[{}]{\$completed\+Task}{, }\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Actualiza una tarea como operario.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$updated\+Task} & Objeto con los datos actualizados de la tarea. \\
+\hline
+int & {\em \$id} & ID de la tarea a actualizar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a7aea8025777b03918db101795b79e54f}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!countFilteredTasks@{countFilteredTasks}}
+\index{countFilteredTasks@{countFilteredTasks}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{countFilteredTasks()}{countFilteredTasks()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a7aea8025777b03918db101795b79e54f} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::count\+Filtered\+Tasks (\begin{DoxyParamCaption}\item[{}]{\$filters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Cuenta el número de tareas que cumplen con los filtros especificados.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$filters} & Filtros a aplicar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número de tareas que cumplen con los filtros. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a40272e393b88371eaebdb31e77b3d3a7}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!countTasks@{countTasks}}
+\index{countTasks@{countTasks}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{countTasks()}{countTasks()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a40272e393b88371eaebdb31e77b3d3a7} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::count\+Tasks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Cuenta el número total de tareas.
+
+\begin{DoxyReturn}{Returns}
+int Número total de tareas. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_ae0aa5333411906da9f3f84781c4f53f7}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!crearUsuario@{crearUsuario}}
+\index{crearUsuario@{crearUsuario}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{crearUsuario()}{crearUsuario()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_ae0aa5333411906da9f3f84781c4f53f7} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::crear\+Usuario (\begin{DoxyParamCaption}\item[{}]{\$usuario}{, }\item[{}]{\$password}{, }\item[{}]{\$status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Crea un nuevo usuario.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$usuario} & Nombre de usuario. \\
+\hline
+string & {\em \$password} & Contraseña del usuario. \\
+\hline
+string & {\em \$status} & Estado del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_aef661722d878b049aa811b3a2e61e841}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!deleteFicheros@{deleteFicheros}}
+\index{deleteFicheros@{deleteFicheros}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{deleteFicheros()}{deleteFicheros()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_aef661722d878b049aa811b3a2e61e841} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::delete\+Ficheros (\begin{DoxyParamCaption}\item[{}]{\$campo}{, }\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Elimina los archivos de una tarea.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$campo} & Campo a actualizar. \\
+\hline
+int & {\em \$id} & ID de la tarea. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a199c9099eb657937929b9b7adbf7ad9a}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!deleteTask@{deleteTask}}
+\index{deleteTask@{deleteTask}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{deleteTask()}{deleteTask()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a199c9099eb657937929b9b7adbf7ad9a} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::delete\+Task (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Elimina una tarea por su ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID de la tarea a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a6eea52a166a783c8d70e6728e35e39ba}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!editarUsuario@{editarUsuario}}
+\index{editarUsuario@{editarUsuario}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{editarUsuario()}{editarUsuario()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a6eea52a166a783c8d70e6728e35e39ba} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::editar\+Usuario (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$usuario}{, }\item[{}]{\$password}{, }\item[{}]{\$status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Edita un usuario.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del usuario. \\
+\hline
+string & {\em \$usuario} & Nombre de usuario. \\
+\hline
+string & {\em \$password} & Contraseña del usuario. \\
+\hline
+string & {\em \$status} & Estado del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a81b153c589c75fe8e2bcb3dd12d85102}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!eliminarUsuario@{eliminarUsuario}}
+\index{eliminarUsuario@{eliminarUsuario}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{eliminarUsuario()}{eliminarUsuario()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a81b153c589c75fe8e2bcb3dd12d85102} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::eliminar\+Usuario (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Elimina un usuario por su ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a13e614a862d634fab77f6a0b4d1fc0f7}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getFilteredTasks@{getFilteredTasks}}
+\index{getFilteredTasks@{getFilteredTasks}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getFilteredTasks()}{getFilteredTasks()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a13e614a862d634fab77f6a0b4d1fc0f7} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Filtered\+Tasks (\begin{DoxyParamCaption}\item[{}]{\$limit}{, }\item[{}]{\$offset}{, }\item[{}]{\$filters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene las tareas filtradas y paginadas.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & Número máximo de tareas a obtener. \\
+\hline
+int & {\em \$offset} & Desplazamiento para la paginación. \\
+\hline
+array & {\em \$filters} & Filtros a aplicar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Arreglo de tareas. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a7f757000a271e996d1327ea5d0eb00b0}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getOperarios@{getOperarios}}
+\index{getOperarios@{getOperarios}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getOperarios()}{getOperarios()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a7f757000a271e996d1327ea5d0eb00b0} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Operarios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene todos los operarios.
+
+\begin{DoxyReturn}{Returns}
+array Arreglo de operarios. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a1176a292e92c7b86f3d3d0299984654a}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getProvinciaNameById@{getProvinciaNameById}}
+\index{getProvinciaNameById@{getProvinciaNameById}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getProvinciaNameById()}{getProvinciaNameById()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a1176a292e92c7b86f3d3d0299984654a} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Provincia\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene el nombre de una provincia por su ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & El ID de la provincia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false El nombre de la provincia si se encuentra, o false si no se encuentra. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a0026bde7d61221937cd5db9d23035f5e}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getProvincias@{getProvincias}}
+\index{getProvincias@{getProvincias}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getProvincias()}{getProvincias()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a0026bde7d61221937cd5db9d23035f5e} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Provincias (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene todas las provincias.
+
+\begin{DoxyReturn}{Returns}
+PDOStatement Resultado de la consulta. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a72630b6fbb85fb30c90ab086f4c4647f}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getTaskById@{getTaskById}}
+\index{getTaskById@{getTaskById}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getTaskById()}{getTaskById()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a72630b6fbb85fb30c90ab086f4c4647f} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Task\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene una tarea por su ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID de la tarea. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null Tarea encontrada o null si no existe. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a241de64505e87f565ef3f0380dcc1b1a}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getTasksByPage@{getTasksByPage}}
+\index{getTasksByPage@{getTasksByPage}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getTasksByPage()}{getTasksByPage()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a241de64505e87f565ef3f0380dcc1b1a} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Tasks\+By\+Page (\begin{DoxyParamCaption}\item[{}]{\$limit}{, }\item[{}]{\$offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene las tareas paginadas.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & Número máximo de tareas a obtener. \\
+\hline
+int & {\em \$offset} & Desplazamiento para la paginación. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Arreglo de tareas. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_ad2ade5ae4a517c94e935709da7948792}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getTasksOrderedByDate@{getTasksOrderedByDate}}
+\index{getTasksOrderedByDate@{getTasksOrderedByDate}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getTasksOrderedByDate()}{getTasksOrderedByDate()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_ad2ade5ae4a517c94e935709da7948792} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Tasks\+Ordered\+By\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene las tareas ordenadas por fecha de creación en orden descendente.
+
+\begin{DoxyReturn}{Returns}
+array Arreglo de tareas. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a3de0bc8779592a615397a8adb56aaffe}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getUser@{getUser}}
+\index{getUser@{getUser}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a3de0bc8779592a615397a8adb56aaffe} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+User (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$pass}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene un usuario por sus credenciales.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user} & Nombre de usuario. \\
+\hline
+string & {\em \$pass} & Contraseña del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null Usuario encontrado o null si no existe. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a29c550675ca6ba681f67bd03772aaa94}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getUsuarioById@{getUsuarioById}}
+\index{getUsuarioById@{getUsuarioById}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getUsuarioById()}{getUsuarioById()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a29c550675ca6ba681f67bd03772aaa94} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Usuario\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene un usuario por su ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object Usuario encontrado. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_acb078421628a31e4432956ebe7b5ad2f}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getUsuarioNameById@{getUsuarioNameById}}
+\index{getUsuarioNameById@{getUsuarioNameById}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getUsuarioNameById()}{getUsuarioNameById()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_acb078421628a31e4432956ebe7b5ad2f} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Usuario\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene el nombre de usuario por su ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Nombre de usuario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_ad91efb9cbdf42cc39b3fed095b465e87}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!getUsuarios@{getUsuarios}}
+\index{getUsuarios@{getUsuarios}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{getUsuarios()}{getUsuarios()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_ad91efb9cbdf42cc39b3fed095b465e87} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::get\+Usuarios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene todos los usuarios.
+
+\begin{DoxyReturn}{Returns}
+array Arreglo de usuarios. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a0663372ab855b73f042484dae934565e}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!insertTask@{insertTask}}
+\index{insertTask@{insertTask}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{insertTask()}{insertTask()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a0663372ab855b73f042484dae934565e} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::insert\+Task (\begin{DoxyParamCaption}\item[{}]{\$task}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Inserta una nueva tarea en la base de datos.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$task} & Objeto con los datos de la tarea. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1db_model_a50b56be99ec14e2799b370d7ad675d5f}\index{App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}!updateTask@{updateTask}}
+\index{updateTask@{updateTask}!App\textbackslash{}Models\textbackslash{}dbModel@{App\textbackslash{}Models\textbackslash{}dbModel}}
+\doxysubsubsection{\texorpdfstring{updateTask()}{updateTask()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1db_model_a50b56be99ec14e2799b370d7ad675d5f} 
+static App\textbackslash{}\+Models\textbackslash{}db\+Model\+::update\+Task (\begin{DoxyParamCaption}\item[{}]{\$updated\+Task}{, }\item[{}]{\$id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Actualiza una tarea.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$updated\+Task} & Objeto con los datos actualizados de la tarea. \\
+\hline
+int & {\em \$id} & ID de la tarea a actualizar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Resultado de la operación. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{db_model_8php}{db\+Model.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}Gestor\+Errores Class Reference}
+\hypertarget{class_app_1_1_models_1_1_gestor_errores}{}\label{class_app_1_1_models_1_1_gestor_errores}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a2a460dff95a7ff73fc6750a9a30dfb5a}{\+\_\+\+\_\+construct}} (\$format\+\_\+prefix=\textquotesingle{}\textquotesingle{}, \$format\+\_\+sufix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a484839ba5ca30201d36551c70039fda4}{Anota\+Error}} (\$campo, \$descripcion)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a1538282101800bb2007a1616e7399371}{Hay\+Errores}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a3a71669e6db5205b059051823154cc5d}{Hay\+Error}} (\$campo)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_ad86a63947a986e558a8e26696fb2f772}{Error}} (\$campo)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a6ca7753cab4071550e159c321abfc6d0}{Error\+Formateado}} (\$campo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a89b000f776b6c528816369569c9a64b0}{\$errores}} =array()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a5601cc7000f4da0606453de4b150341b}{\$format\+\_\+prefix}}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_gestor_errores_a364b2e4a2252b5bfdd6f332a22e889cd}{\$format\+\_\+suffix}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que me permitirá llevar un registro de los errores que se producen 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a2a460dff95a7ff73fc6750a9a30dfb5a}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a2a460dff95a7ff73fc6750a9a30dfb5a} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$format\+\_\+prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$format\+\_\+sufix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Crea el gestor de errores y anota las etiquetas que se muestran antes y después en caso de queramos salida formateada 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$format\+\_\+prefix} & \\
+\hline
+type & {\em \$format\+\_\+sufix} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a484839ba5ca30201d36551c70039fda4}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!AnotaError@{AnotaError}}
+\index{AnotaError@{AnotaError}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{AnotaError()}{AnotaError()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a484839ba5ca30201d36551c70039fda4} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\+Anota\+Error (\begin{DoxyParamCaption}\item[{}]{\$campo}{, }\item[{}]{\$descripcion}{}\end{DoxyParamCaption})}
+
+Anota un error para un campo en nuestro gestor de errores 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$campo} & \\
+\hline
+type & {\em \$descripcion} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_ad86a63947a986e558a8e26696fb2f772}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!Error@{Error}}
+\index{Error@{Error}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_ad86a63947a986e558a8e26696fb2f772} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\+Error (\begin{DoxyParamCaption}\item[{}]{\$campo}{}\end{DoxyParamCaption})}
+
+Devuelve la descripción de error para un campo o una cadaena vacia si no hay 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$campo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a6ca7753cab4071550e159c321abfc6d0}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!ErrorFormateado@{ErrorFormateado}}
+\index{ErrorFormateado@{ErrorFormateado}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{ErrorFormateado()}{ErrorFormateado()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a6ca7753cab4071550e159c321abfc6d0} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\+Error\+Formateado (\begin{DoxyParamCaption}\item[{}]{\$campo}{}\end{DoxyParamCaption})}
+
+Devuelve la descripción del error o cadena vacia si no hay 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$campo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a3a71669e6db5205b059051823154cc5d}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!HayError@{HayError}}
+\index{HayError@{HayError}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{HayError()}{HayError()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a3a71669e6db5205b059051823154cc5d} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\+Hay\+Error (\begin{DoxyParamCaption}\item[{}]{\$campo}{}\end{DoxyParamCaption})}
+
+Indica si hay error en un campo \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a1538282101800bb2007a1616e7399371}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!HayErrores@{HayErrores}}
+\index{HayErrores@{HayErrores}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{HayErrores()}{HayErrores()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a1538282101800bb2007a1616e7399371} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\+Hay\+Errores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indica si hay errores \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a89b000f776b6c528816369569c9a64b0}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!\$errores@{\$errores}}
+\index{\$errores@{\$errores}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{\$errores}{\$errores}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a89b000f776b6c528816369569c9a64b0} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\$errores =array()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a5601cc7000f4da0606453de4b150341b}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!\$format\_prefix@{\$format\_prefix}}
+\index{\$format\_prefix@{\$format\_prefix}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{\$format\_prefix}{\$format\_prefix}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a5601cc7000f4da0606453de4b150341b} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\$format\+\_\+prefix\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_app_1_1_models_1_1_gestor_errores_a364b2e4a2252b5bfdd6f332a22e889cd}\index{App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}!\$format\_suffix@{\$format\_suffix}}
+\index{\$format\_suffix@{\$format\_suffix}!App\textbackslash{}Models\textbackslash{}GestorErrores@{App\textbackslash{}Models\textbackslash{}GestorErrores}}
+\doxysubsubsection{\texorpdfstring{\$format\_suffix}{\$format\_suffix}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_gestor_errores_a364b2e4a2252b5bfdd6f332a22e889cd} 
+App\textbackslash{}\+Models\textbackslash{}\+Gestor\+Errores\+::\$format\+\_\+suffix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{_gestor_errores_8php}{Gestor\+Errores.\+php}}\end{DoxyCompactItemize}

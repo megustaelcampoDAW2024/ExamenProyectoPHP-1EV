@@ -1,0 +1,117 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}Session\+Usuario Class Reference}
+\hypertarget{class_app_1_1_models_1_1_session_usuario}{}\label{class_app_1_1_models_1_1_session_usuario}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_ae9e9663c4d6b38e9897c95bbf62ae9d3}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_a0f6915d53b5b4433463c6b6cce0aada7}{login}} (\$usuario, \$password, \$status)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_a4e7435e9fc144063512fcf889e3c2a76}{set}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_a6c19a519af8cb1f27d913fe0e811436a}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_aacd47f5bbac0f5073b62f12355eb11c2}{delete}} (\$key)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_a9821dee7d1a4f7f7eefb9da99151091c}{destroy}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_session_usuario_a1530120c9a7ff8f7d794cf20bb045da1}{is\+Logged}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para gestionar la sesión del usuario. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_1_1_models_1_1_session_usuario_ae9e9663c4d6b38e9897c95bbf62ae9d3}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_ae9e9663c4d6b38e9897c95bbf62ae9d3} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor. Inicia la sesión si no está iniciada. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1_session_usuario_aacd47f5bbac0f5073b62f12355eb11c2}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!delete@{delete}}
+\index{delete@{delete}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_aacd47f5bbac0f5073b62f12355eb11c2} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::delete (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Elimina un valor de la sesión.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Clave del valor a eliminar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_models_1_1_session_usuario_a9821dee7d1a4f7f7eefb9da99151091c}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!destroy@{destroy}}
+\index{destroy@{destroy}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_a9821dee7d1a4f7f7eefb9da99151091c} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Destruye la sesión. \Hypertarget{class_app_1_1_models_1_1_session_usuario_a6c19a519af8cb1f27d913fe0e811436a}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!get@{get}}
+\index{get@{get}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_a6c19a519af8cb1f27d913fe0e811436a} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Obtiene un valor de la sesión.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Clave del valor a obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\texorpdfstring{$\vert$}{|}null Valor almacenado en la sesión o null si no existe. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_session_usuario_a1530120c9a7ff8f7d794cf20bb045da1}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!isLogged@{isLogged}}
+\index{isLogged@{isLogged}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{isLogged()}{isLogged()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_a1530120c9a7ff8f7d794cf20bb045da1} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::is\+Logged (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Verifica si el usuario está logueado.
+
+\begin{DoxyReturn}{Returns}
+bool True si el usuario está logueado, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_session_usuario_a0f6915d53b5b4433463c6b6cce0aada7}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!login@{login}}
+\index{login@{login}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_a0f6915d53b5b4433463c6b6cce0aada7} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::login (\begin{DoxyParamCaption}\item[{}]{\$usuario}{, }\item[{}]{\$password}{, }\item[{}]{\$status}{}\end{DoxyParamCaption})}
+
+Inicia sesión con el usuario, contraseña y estado proporcionados.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$usuario} & Nombre de usuario. \\
+\hline
+string & {\em \$password} & Contraseña del usuario. \\
+\hline
+string & {\em \$status} & Estado del usuario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_models_1_1_session_usuario_a4e7435e9fc144063512fcf889e3c2a76}\index{App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}!set@{set}}
+\index{set@{set}!App\textbackslash{}Models\textbackslash{}SessionUsuario@{App\textbackslash{}Models\textbackslash{}SessionUsuario}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_session_usuario_a4e7435e9fc144063512fcf889e3c2a76} 
+App\textbackslash{}\+Models\textbackslash{}\+Session\+Usuario\+::set (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Establece un valor en la sesión.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Clave del valor a establecer. \\
+\hline
+mixed & {\em \$value} & Valor a establecer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{_session_usuario_8php}{Session\+Usuario.\+php}}\end{DoxyCompactItemize}

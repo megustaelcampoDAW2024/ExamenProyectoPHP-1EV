@@ -1,0 +1,96 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}Singleton\+DB Class Reference}
+\hypertarget{class_app_1_1_models_1_1_singleton_d_b}{}\label{class_app_1_1_models_1_1_singleton_d_b}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_af3f836ee0d0d76996bc3e8324eb4bffa}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_a9fe497f41dfdeccda01e8f81a5a0f1ea}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_a75b0cab2c27826ec04cdf770446fdb27}{\$conn}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_ab45a5656c11b509b88e81baf2482d1e5}{\$dns}} = "{}mysql\+:host=localhost;dbname=constructora"{}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_a9398a8c4bab3d7f39f4a41218240b081}{\$user}} = "{}root"{}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_a973e7aaf3d33bb861bc1bb5c9e44a4c0}{\$pass}} = "{}"{}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_singleton_d_b_a503f0fdc1174881e1b6942a9ae8dabd2}{\$instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Singleton\+DB
+
+Esta clase implementa el patrón Singleton para gestionar una única instancia de conexión a la base de datos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_af3f836ee0d0d76996bc3e8324eb4bffa}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_af3f836ee0d0d76996bc3e8324eb4bffa} 
+App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor de la clase
+
+Inicializa la conexión a la base de datos utilizando PDO. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_a9fe497f41dfdeccda01e8f81a5a0f1ea}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_a9fe497f41dfdeccda01e8f81a5a0f1ea} 
+static App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene la instancia única de la clase
+
+\begin{DoxyReturn}{Returns}
+Singleton\+DB La instancia única de la clase 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_a75b0cab2c27826ec04cdf770446fdb27}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{\$conn}{\$conn}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_a75b0cab2c27826ec04cdf770446fdb27} 
+App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::\$conn}
+
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_ab45a5656c11b509b88e81baf2482d1e5}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!\$dns@{\$dns}}
+\index{\$dns@{\$dns}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{\$dns}{\$dns}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_ab45a5656c11b509b88e81baf2482d1e5} 
+App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::\$dns = "{}mysql\+:host=localhost;dbname=constructora"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_a503f0fdc1174881e1b6942a9ae8dabd2}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!\$instance@{\$instance}}
+\index{\$instance@{\$instance}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{\$instance}{\$instance}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_a503f0fdc1174881e1b6942a9ae8dabd2} 
+App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::\$instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_a973e7aaf3d33bb861bc1bb5c9e44a4c0}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!\$pass@{\$pass}}
+\index{\$pass@{\$pass}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{\$pass}{\$pass}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_a973e7aaf3d33bb861bc1bb5c9e44a4c0} 
+App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::\$pass = "{}"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class_app_1_1_models_1_1_singleton_d_b_a9398a8c4bab3d7f39f4a41218240b081}\index{App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}!\$user@{\$user}}
+\index{\$user@{\$user}!App\textbackslash{}Models\textbackslash{}SingletonDB@{App\textbackslash{}Models\textbackslash{}SingletonDB}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_singleton_d_b_a9398a8c4bab3d7f39f4a41218240b081} 
+App\textbackslash{}\+Models\textbackslash{}\+Singleton\+DB\+::\$user = "{}root"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{_singleton_d_b_8php}{Singleton\+DB.\+php}}\end{DoxyCompactItemize}

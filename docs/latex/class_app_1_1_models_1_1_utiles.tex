@@ -1,0 +1,196 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}Utiles Class Reference}
+\hypertarget{class_app_1_1_models_1_1_utiles}{}\label{class_app_1_1_models_1_1_utiles}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+Inheritance diagram for App\textbackslash{}Models\textbackslash{}Utiles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_models_1_1_utiles}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a97017dfe0b5bd11c312658e1820a7c7b}{filtro\+Form}} (\$errores)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a1a4e03264010a37cab9e3158d5c79a4a}{color\+Label}} (\$name, \$errores)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_aabd74c1164321811cac56ea9d75cb641}{contenido\+Label}} (\$name, \$nom\+Label, \$errores)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a1bef34bc9e6a053a8e66e8cf4ec10f24}{obtener\+Fecha\+Actual}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_aff8905a3b5c3ac81098a27de3cd3e1cf}{validar\+Telefono}} (\$telefono)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a08926190ce1ae0b8f734dc9f67aada05}{validar\+Codigo\+Postal}} (\$codigo\+Postal)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a2321bbe171b4fc818d1182058eb4b269}{validar\+Email}} (\$email)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a9e6a20cb14fcc3f0b5a281525b6a6c46}{validar\+Fecha\+Posterior}} (\$fecha\+Inicial, \$fecha\+Nueva)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a50f36da91f2d586de3386fe4bc181866}{valid\+Dni\+Cif\+Nie}} (\$dni)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_utiles_a82ba25dca9d49844127d74c79d8b2be5}{valor\+Post}} (\$nombre\+Campo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a1a4e03264010a37cab9e3158d5c79a4a}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!colorLabel@{colorLabel}}
+\index{colorLabel@{colorLabel}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{colorLabel()}{colorLabel()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a1a4e03264010a37cab9e3158d5c79a4a} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::color\+Label (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$errores}{}\end{DoxyParamCaption})}
+
+Aplica estilo de color a la etiqueta si hay un error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Nombre del campo. \\
+\hline
+object & {\em \$errores} & Objeto para verificar errores. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_models_1_1_utiles_aabd74c1164321811cac56ea9d75cb641}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!contenidoLabel@{contenidoLabel}}
+\index{contenidoLabel@{contenidoLabel}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{contenidoLabel()}{contenidoLabel()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_aabd74c1164321811cac56ea9d75cb641} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::contenido\+Label (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$nom\+Label}{, }\item[{}]{\$errores}{}\end{DoxyParamCaption})}
+
+Muestra el contenido de la etiqueta, incluyendo errores si los hay.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Nombre del campo. \\
+\hline
+string & {\em \$nom\+Label} & Nombre de la etiqueta. \\
+\hline
+object & {\em \$errores} & Objeto para verificar errores. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a97017dfe0b5bd11c312658e1820a7c7b}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!filtroForm@{filtroForm}}
+\index{filtroForm@{filtroForm}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{filtroForm()}{filtroForm()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a97017dfe0b5bd11c312658e1820a7c7b} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::filtro\+Form (\begin{DoxyParamCaption}\item[{}]{\$errores}{}\end{DoxyParamCaption})}
+
+Filtra el formulario y anota errores si los hay.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$errores} & Objeto para anotar errores. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a1bef34bc9e6a053a8e66e8cf4ec10f24}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!obtenerFechaActual@{obtenerFechaActual}}
+\index{obtenerFechaActual@{obtenerFechaActual}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{obtenerFechaActual()}{obtenerFechaActual()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a1bef34bc9e6a053a8e66e8cf4ec10f24} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::obtener\+Fecha\+Actual (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Obtiene la fecha actual en formato \textquotesingle{}d-\/m-\/Y\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+string Fecha actual. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a08926190ce1ae0b8f734dc9f67aada05}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!validarCodigoPostal@{validarCodigoPostal}}
+\index{validarCodigoPostal@{validarCodigoPostal}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{validarCodigoPostal()}{validarCodigoPostal()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a08926190ce1ae0b8f734dc9f67aada05} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::validar\+Codigo\+Postal (\begin{DoxyParamCaption}\item[{}]{\$codigo\+Postal}{}\end{DoxyParamCaption})}
+
+Valida el formato del código postal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$codigo\+Postal} & Código postal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si es válido, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a2321bbe171b4fc818d1182058eb4b269}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!validarEmail@{validarEmail}}
+\index{validarEmail@{validarEmail}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{validarEmail()}{validarEmail()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a2321bbe171b4fc818d1182058eb4b269} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::validar\+Email (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Valida el formato del correo electrónico.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & Correo electrónico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si es válido, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a9e6a20cb14fcc3f0b5a281525b6a6c46}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!validarFechaPosterior@{validarFechaPosterior}}
+\index{validarFechaPosterior@{validarFechaPosterior}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{validarFechaPosterior()}{validarFechaPosterior()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a9e6a20cb14fcc3f0b5a281525b6a6c46} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::validar\+Fecha\+Posterior (\begin{DoxyParamCaption}\item[{}]{\$fecha\+Inicial}{, }\item[{}]{\$fecha\+Nueva}{}\end{DoxyParamCaption})}
+
+Valida si una fecha es posterior a otra.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fecha\+Inicial} & Fecha inicial. \\
+\hline
+string & {\em \$fecha\+Nueva} & Fecha nueva. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si la fecha nueva es posterior, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_utiles_aff8905a3b5c3ac81098a27de3cd3e1cf}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!validarTelefono@{validarTelefono}}
+\index{validarTelefono@{validarTelefono}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{validarTelefono()}{validarTelefono()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_aff8905a3b5c3ac81098a27de3cd3e1cf} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::validar\+Telefono (\begin{DoxyParamCaption}\item[{}]{\$telefono}{}\end{DoxyParamCaption})}
+
+Valida el formato del número de teléfono.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$telefono} & Número de teléfono. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si es válido, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a50f36da91f2d586de3386fe4bc181866}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!validDniCifNie@{validDniCifNie}}
+\index{validDniCifNie@{validDniCifNie}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{validDniCifNie()}{validDniCifNie()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a50f36da91f2d586de3386fe4bc181866} 
+App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::valid\+Dni\+Cif\+Nie (\begin{DoxyParamCaption}\item[{}]{\$dni}{}\end{DoxyParamCaption})}
+
+Valida un DNI (NIF), CIF o NIE.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dni} & Número de identificación. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True si es válido, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_utiles_a82ba25dca9d49844127d74c79d8b2be5}\index{App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}!valorPost@{valorPost}}
+\index{valorPost@{valorPost}!App\textbackslash{}Models\textbackslash{}Utiles@{App\textbackslash{}Models\textbackslash{}Utiles}}
+\doxysubsubsection{\texorpdfstring{valorPost()}{valorPost()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_utiles_a82ba25dca9d49844127d74c79d8b2be5} 
+static App\textbackslash{}\+Models\textbackslash{}\+Utiles\+::valor\+Post (\begin{DoxyParamCaption}\item[{}]{\$nombre\+Campo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Obtiene el valor de un campo POST.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$nombre\+Campo} & Nombre del campo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Valor del campo. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{_utiles_8php}{Utiles.\+php}}\end{DoxyCompactItemize}
