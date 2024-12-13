@@ -7,7 +7,7 @@ include 'helpers.php';
 
 Route::any('/', [Tareas::class, 'logIn']);
 Route::any('logIn', [Tareas::class, 'logIn']);
-Route::any('inicio', [Tareas::class, 'inicio']);
+Route::any('ayuda', [Tareas::class, 'ayuda']);
 Route::any('listarTareas', [Tareas::class, 'listarTareas']);
 Route::any('listarTareas/uncompleted', [Tareas::class, 'listarTareasPorCompletar']);
 Route::any('crearTarea', [Tareas::class, 'crearTarea']);

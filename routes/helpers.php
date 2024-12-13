@@ -6,7 +6,7 @@
  * @return string La URL completa.
  */
 function miUrl(String $url){
-    return "http://localhost/ProyectoPHP-1EV/public/" . $url;
+    return "http://localhost/ExamenProyectoPHP-1EV/public/" . $url;
 }
 
 /**
@@ -15,7 +15,7 @@ function miUrl(String $url){
  * @param string $url La URL relativa.
  */
 function myRedirect($url){
-    header('Location: http://localhost/ProyectoPHP-1EV/public/' . $url);
+    header('Location: http://localhost/ExamenProyectoPHP-1EV/public/' . $url);
     exit();
 }
 ?>

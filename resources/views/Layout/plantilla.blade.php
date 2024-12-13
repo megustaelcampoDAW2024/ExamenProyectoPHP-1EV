@@ -14,12 +14,12 @@
         <div class="d-flex">
             <nav class="navbar navbar-light bg-light flex-column p-3" style="width: 250px;">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="<?=miUrl('inicio')?>">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?=miUrl('listarTareas')?>">Listar Tareas</a></li>
                     @if ($_SESSION['status'] == 'A')
                         <li class="nav-item"><a class="nav-link" href="<?=miUrl('crearTarea')?>">Crear Tarea</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?=miUrl('administrarUsuarios')?>">Administrar Usuarios</a></li>
                     @endif
+                    <li class="nav-item"><a class="nav-link" href="<?=miUrl('ayuda')?>">Ayuda</a></li>
                 </ul>
             </nav>
             <div class="container-fluid mt-4">

@@ -20,10 +20,10 @@ class Tareas extends Controller
     /**
      * Muestra la página de inicio si el usuario está logueado, de lo contrario redirige a la página de inicio de sesión.
      */
-    public function inicio()
+    public function ayuda()
     {
         if($this->sessionUsuario->isLogged()){
-            return view('inicio');
+            return view('ayuda');
         }else{
             myRedirect("logIn");
         }
@@ -295,7 +295,7 @@ class Tareas extends Controller
     public function logIn()
     {
         if($this->sessionUsuario->isLogged()){
-            myRedirect('inicio');
+            myRedirect('ayuda');
         }else{
             $logError = false;
             $utiles = new Utiles();
@@ -312,7 +312,7 @@ class Tareas extends Controller
                             setcookie('password', '', time() - 3600, "/");
                         }
                     }
-                    myRedirect("inicio");
+                    myRedirect("ayuda");
                 }else{
                     $logError = true;
                     return view('logIn', compact('utiles','logError'));
